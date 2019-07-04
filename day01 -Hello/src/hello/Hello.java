@@ -13,6 +13,11 @@ public class Hello {
 		
 		// 실행은 : ctrl + F11
 		
+		// 자바 기본 출력 구문
+		// sysout -> ctrl + space bar
+		System.out.println("안녕하세요, 자바!");
+		
+		
 
 	}
 
