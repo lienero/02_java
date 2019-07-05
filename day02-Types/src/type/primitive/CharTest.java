@@ -18,6 +18,7 @@ public class CharTest {
 		input = 'A+'; // 두 글자 이상을 저장하려하는 오류
 		input = A;	  // '' 따옴표 안에 문자를 쓰지 않았으므로 오류
 		*/
+		
 		// 3. 사용
 		System.out.println("input=" + input);
 		
