@@ -3,10 +3,10 @@ package operator.binary;
 import java.util.Scanner;
 
 /**
- * Æ÷¸ËÆÃ Ãâ·ÂÀ» Áö¿øÇÏ´Â printf() ¸Ş¼Òµå¸¦ Å×½ºÆ®ÇÏ´Â Å¬·¡½º ---------------------------------- %d :
- * decimal : ½ÊÁø¼ö Ãâ·Â %b : boolean : true, false ÀÇ boolean °ª Ãâ·Â %f : float : ½Ç¼ö Ãâ·Â
- * %s : String : ¹®ÀÚ¿­ Ãâ·Â %c : char : ¹®ÀÚ 1°³ Ãâ·Â %x : hexadecimal : 16Áø¼ö Ãâ·Â %n : new
- * line : ´ÙÀ½ÁÙ °³Çà Ãâ·Â %% : % ±ÛÀÚ ÀÚÃ¼ Ãâ·Â
+ * í¬ë§·íŒ… ì¶œë ¥ì„ ì§€ì›í•˜ëŠ” printf() ë©”ì†Œë“œë¥¼ í…ŒìŠ¤íŠ¸í•˜ëŠ” í´ë˜ìŠ¤ ---------------------------------- %d :
+ * decimal : ì‹­ì§„ìˆ˜ ì¶œë ¥ %b : boolean : true, false ì˜ boolean ê°’ ì¶œë ¥ %f : float : ì‹¤ìˆ˜ ì¶œë ¥
+ * %s : String : ë¬¸ìì—´ ì¶œë ¥ %c : char : ë¬¸ì 1ê°œ ì¶œë ¥ %x : hexadecimal : 16ì§„ìˆ˜ ì¶œë ¥ %n : new
+ * line : ë‹¤ìŒì¤„ ê°œí–‰ ì¶œë ¥ %% : % ê¸€ì ìì²´ ì¶œë ¥
  * 
  * @author Administrator
  *
@@ -14,28 +14,28 @@ import java.util.Scanner;
 public class PrintfTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ğ
-		// Á¤¼ö ÀÔ·Â°ªÀ» ÀúÀåÇÒ º¯¼ö ¼±¾ğ
+		// 1. ì„ ì–¸
+		// ì •ìˆ˜ ì…ë ¥ê°’ì„ ì €ì¥í•  ë³€ìˆ˜ ì„ ì–¸
 		int input1;
 		int input2;
 
-		// Å°º¸µå ÀÔ·ÂÀ» Æí¸®ÇÏ°Ô ÇØÁÖ´Â ½ºÄ³³Ê ¼±¾ğ
-		// ½ºÄ³³Ê »ç¿ëÀ» À§ÇØ¼­ import ÇÊ¿ä
-		// ctrl + shift + o (ÀÚµ¿ import)
+		// í‚¤ë³´ë“œ ì…ë ¥ì„ í¸ë¦¬í•˜ê²Œ í•´ì£¼ëŠ” ìŠ¤ìºë„ˆ ì„ ì–¸
+		// ìŠ¤ìºë„ˆ ì‚¬ìš©ì„ ìœ„í•´ì„œ import í•„ìš”
+		// ctrl + shift + o (ìë™ import)
 		Scanner scan;
-		// scan ÃÊ±âÈ­
+		// scan ì´ˆê¸°í™”
 		scan = new Scanner(System.in);
 		
-		// ÀÔ·Â ¾È³» ¹®±¸ Ãâ·Â
-		System.out.println("Á¤¼ö µÎ °³¸¦ ÀÔ·Â : ");
+		// ì…ë ¥ ì•ˆë‚´ ë¬¸êµ¬ ì¶œë ¥
+		System.out.println("ì •ìˆ˜ ë‘ ê°œë¥¼ ì…ë ¥ : : ");
 		
-		// scan »ç¿ë
+		// scan ì‚¬ìš©
 		input1 = scan.nextInt();
 		input2 = scan.nextInt();
 		
 		
 		
-		// 3. printf ·Î Ãâ·Â
+		// 3. printf ë¡œ ì¶œë ¥
 		System.out.printf("%d + %d = %d%n"
 							, input1, input2, (input1 + input2));
 		System.out.printf("%d - %d = %d%n"

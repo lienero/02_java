@@ -1,8 +1,8 @@
 package type.casting;
 /**
- * ¼ıÀÚÇü µ¥ÀÌÅÍ »çÀÌ¿¡
- * Çü º¯È¯(Type Casting)À»
- * Å×½ºÆ®ÇÏ´Â Å¬·¡½ºÀÌ´Ù.
+ * ìˆ«ìí˜• ë°ì´í„° ì‚¬ì´ì—
+ * í˜• ë³€í™˜(Type Casting)ì„
+ * í…ŒìŠ¤íŠ¸í•˜ëŠ” í´ë˜ìŠ¤ì´ë‹¤.
  * 
  * @author Administrator
  *
@@ -10,20 +10,20 @@ package type.casting;
 public class TypeCastingTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ğ, 2. ÃÊ±âÈ­
+		// 1. ì„ ì–¸, 2. ì´ˆê¸°í™”
 		double pi = 3.1415926535797;
 		int number = 100;
 		int result;
 		
-		// 3. Çü º¯È¯ : (Å¸ÀÔÀÌ¸§) ÇÇ¿¬»ê°ª;
+		// 3. í˜• ë³€í™˜ : (íƒ€ì…ì´ë¦„) í”¼ì—°ì‚°ê°’;
 		result = number + (int) pi;
 		
-		// 4. »ç¿ë : °ª Ãâ·Â
+		// 4. ì‚¬ìš© : ê°’ ì¶œë ¥
 		System.out.println("double pi=" + pi);
 		System.out.println("int number=" + number);
 		System.out.println("int result=" + result);
 		
-		// 5. byte Å¸ÀÔÀ¸·Î result ¸¦ º¯È¯ ÀúÀå
+		// 5. byte íƒ€ì…ìœ¼ë¡œ result ë¥¼ ë³€í™˜ ì €ì¥
 		byte buffer = (byte) result;
 		System.out.println("int result=" + result);
 		System.out.println("byte buffer=" + buffer);

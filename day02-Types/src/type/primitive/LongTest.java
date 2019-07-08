@@ -1,10 +1,10 @@
 package type.primitive;
 /**
- * long : int º¸´Ù Å« Á¤¼ö¸¦ ÀúÀåÇÏ´Â Å¸ÀÔ
+ * long : int ë³´ë‹¤ í° ì •ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” íƒ€ì…
  * ---------------------------------------
- * long Å¸ÀÔÀÇ º¯¼ö¿¡ °ªÀ» ÇÒ´çÇÒ ¶§´Â
- * °ªÀÇ µÚ¿¡ ´ë¹®ÀÚ L, ¼Ò¹®ÀÚ l À» ºÙ¿©¼­
- * ÇÒ´çÇØ¾ß ÇÑ´Ù.
+ * long íƒ€ì…ì˜ ë³€ìˆ˜ì— ê°’ì„ í• ë‹¹í•  ë•ŒëŠ”
+ * ê°’ì˜ ë’¤ì— ëŒ€ë¬¸ì L, ì†Œë¬¸ì l ì„ ë¶™ì—¬ì„œ
+ * í• ë‹¹í•´ì•¼ í•œë‹¤.
  * ---------------------------------------
  * 
  * @author Administrator
@@ -13,10 +13,10 @@ package type.primitive;
 public class LongTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ğ
+		// 1. ì„ ì–¸
 		long miliSecond;
 		
-		// 2. ÃÊ±âÈ­
+		// 2. ì´ˆê¸°í™”
 		miliSecond = 1000;
 		System.out.println("mili Second=" + miliSecond);
 		

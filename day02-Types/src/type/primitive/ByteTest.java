@@ -1,13 +1,13 @@
 package type.primitive;
 
 /**
- * byte : 1byte(8bit) ¿¡ ÇØ´çÇÏ´Â ¹üÀ§¸¸Å­
- * 		  Á¤¼ö¸¦ ÀúÀåÇÏ´Â Å¸ÀÔ
+*  byte : 1byte(8bit) ì— í•´ë‹¹í•˜ëŠ” ë²”ìœ„ë§Œí¼
+ * 		  ì •ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” íƒ€ì…
  * ----------------------------------------
- * 8bit = 2ÀÇ 8Á¦°ö
+ * 8bit = 2ì˜ 8ì œê³±
  *	    = 256
- *		= 256°³ÀÇ ¼ıÀÚ¸¦ Ç¥Çö°¡´É
- *		= -128 ~ 0 ~ 127 ±îÁö Ç¥Çö°¡´É
+ *		= 256ê°œì˜ ìˆ«ìë¥¼ í‘œí˜„ê°€ëŠ¥
+ *		= -128 ~ 0 ~ 127 ê¹Œì§€ í‘œí˜„ê°€ëŠ¥
  *	------------------------------------------
  * @author Administrator
  *
@@ -15,23 +15,23 @@ package type.primitive;
 public class ByteTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ğ
+		// 1. ì„ ì–¸
 		byte buffer;
 		
-		// 2. ÃÊ±âÈ­
+		// 2. ì´ˆê¸°í™”
 		buffer = 0;
 		
-		// 3. »ç¿ë : Ãâ·Â
+		// 3. ì‚¬ìš© : ì¶œë ¥
 		System.out.println("buffer=" + buffer);
 		
-		// 4. °ªÀ» º¯°æ
+		// 4. ê°’ì„ ë³€ê²½
 		buffer = 127;
 		System.out.println("buffer=" + buffer);
 		
 		buffer = -128;
 		System.out.println("buffer=" + buffer);
 		
-		// 5. °ªÀÇ ¹üÀ§¸¦ ¹ş¾î³­ °ªÀ» ÀúÀåÇÏ·Á´Â ½Ãµµ
+		// 5. ê°’ì˜ ë²”ìœ„ë¥¼ ë²—ì–´ë‚œ ê°’ì„ ì €ì¥í•˜ë ¤ëŠ” ì‹œë„
 		// Type mismatch: cannot convert from int to byte
 //		buffer = 128; 
 			

@@ -3,10 +3,10 @@ package operator.binary;
 /**
  * <, >, <=, >=, ==, !=
  * 
- * µÎ º­¼öÀÇ °ªÀ» ºñ±³ÇÏ´Â 
- * ºñ±³¿¬»çÀÚ¸¦ Å×½ºÆ®ÇÏ´Â Å¬·¡½º
+ * ë‘ ë²¼ìˆ˜ì˜ ê°’ì„ ë¹„êµí•˜ëŠ” 
+ * ë¹„êµì—°ì‚¬ìžë¥¼ í…ŒìŠ¤íŠ¸í•˜ëŠ” í´ëž˜ìŠ¤
  * 
- * °ü°è ¿¬»êÀÇ °á°ú´Â boolean Å¸ÀÔÀ¸·Î ¾ò¾îÁü
+ * ê´€ê³„ ì—°ì‚°ì˜ ê²°ê³¼ëŠ” boolean íƒ€ìž…ìœ¼ë¡œ ì–»ì–´ì§
  * 
  * 
  * 
@@ -16,19 +16,19 @@ package operator.binary;
 public class RelationalTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ð, 2. ÃÊ±âÈ­
+		// 1. ì„ ì–¸, 2. ì´ˆê¸°í™”
 		int a = 1; 
 		int b = -5;
 		
-		// 3. ºñ±³¿¬»êÀÚ »ç¿ë
-		System.out.println("µî°¡ ºñ±³ ¿¬»êÀÚ");
+		// 3. ë¹„êµì—°ì‚°ìž ì‚¬ìš©
+		System.out.println("ë“±ê°€ ë¹„êµ ì—°ì‚°ìž");
 		System.out.println("--------------------------");
 		
 		System.out.printf("(%d == %d) : %b%n", a, b, (a == b));
 		System.out.printf("(%d != %d) : %b%n", a, b, (a != b));
 		
 		System.out.println("--------------------------");
-		System.out.println("´ë¼Ò ºñ±³ ¿¬»êÀÚ");
+		System.out.println("ëŒ€ì†Œ ë¹„êµ ì—°ì‚°ìž");
 		System.out.println("--------------------------");
 		
 		System.out.printf("(%d > %d) : %b%n", a, b, (a > b));
@@ -36,12 +36,12 @@ public class RelationalTest {
 		System.out.printf("(%d >= %d) : %b%n", a, b, (a >= b));
 		System.out.printf("(%d <= %d) : %b%n", a, b, (a <= b));
 		
-		// ÀÌÅ¬¸³½º IDE ÀÇ ´ÜÃàÅ°
-		// ctrl + d : Ä¿¼­°¡ ÀÖ´Â Çà ÀüÃ¼ »èÁ¦
-		// alt + shift + a : ¼¼·ÎÁÙ ÆíÁý ±â´É Åä±Û
-		// alt + up/down : Çà ÀüÃ¼ »óÇÏ ÀÌµ¿
-		// ctrl + shift + l : ´ÜÃàÅ° ¸ðÀ½ ¾È³»Ã¢ ¿ÀÇÂ
-		// ctrl + F6 : ¿­·Á ÀÖ´Â ÆÄÀÏ »çÀÌ¿¡ ÀÌµ¿
+		// ì´í´ë¦½ìŠ¤ IDE ì˜ ë‹¨ì¶•í‚¤
+		// ctrl + d : ì»¤ì„œê°€ ìžˆëŠ” í–‰ ì „ì²´ ì‚­ì œ
+		// alt + shift + a : ì„¸ë¡œì¤„ íŽ¸ì§‘ ê¸°ëŠ¥ í† ê¸€
+		// alt + up/down : í–‰ ì „ì²´ ìƒí•˜ ì´ë™
+		// ctrl + shift + l : ë‹¨ì¶•í‚¤ ëª¨ìŒ ì•ˆë‚´ì°½ ì˜¤í”ˆ
+		// ctrl + F6 : ì—´ë ¤ ìžˆëŠ” íŒŒì¼ ì‚¬ì´ì— ì´ë™
 		
 		
 	}

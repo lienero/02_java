@@ -1,10 +1,10 @@
 package type.primitive;
 
 /**
- * char : ¹®ÀÚ 1°³¸¦ ÀúÀåÇÏ´Â Å¸ÀÔ
+ * char : ë¬¸ì 1ê°œë¥¼ ì €ì¥í•˜ëŠ” íƒ€ì…
  * --------------------------------
- * ¹®ÀÚ¸¦ À¯´ÏÄÚµå Ç¥±â¹ıÀ¸·Î ÀúÀåÇÏ°í
- * Ãâ·ÂÇÏ¿© Å×½ºÆ®ÇÏ´Â Å¬·¡½º
+ * ë¬¸ìë¥¼ ìœ ë‹ˆì½”ë“œ í‘œê¸°ë²•ìœ¼ë¡œ ì €ì¥í•˜ê³ 
+ * ì¶œë ¥í•˜ì—¬ í…ŒìŠ¤íŠ¸í•˜ëŠ” í´ë˜ìŠ¤
  * 
  * @author Administrator
  *
@@ -12,10 +12,10 @@ package type.primitive;
 public class CharUnicodeTest {
 
 	public static void main(String[] args) {
-		// 1. ¼±¾ğ, 2. ÃÊ±âÈ­ µ¿½Ã¿¡
+		// 1. ì„ ì–¸, 2. ì´ˆê¸°í™” ë™ì‹œì—
 		char han = '\ud55c';
 		char gul = '\uae00';
-		// 3 .»ç¿ë
+		// 3 .ï¿½ï¿½ï¿½
 		System.out.println("han=" + han);
 		System.out.println("gul=" + gul);
 		System.out.println("han + gul=" + han + gul);
