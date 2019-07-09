@@ -3,10 +3,17 @@ package operator.binary;
 import java.util.Scanner;
 
 /**
- * 포맷팅 출력을 지원하는 printf() 메소드를 테스트하는 클래스 ---------------------------------- %d :
- * decimal : 십진수 출력 %b : boolean : true, false 의 boolean 값 출력 %f : float : 실수 출력
- * %s : String : 문자열 출력 %c : char : 문자 1개 출력 %x : hexadecimal : 16진수 출력 %n : new
- * line : 다음줄 개행 출력 %% : % 글자 자체 출력
+ * 포맷팅 출력을 지원하는 printf() 메소드를 테스트하는 클래스 ----------------------------------
+ * %d :
+ * decimal : 십진수 출력 
+ * %b : boolean : true, false 의 boolean 값 출력 
+ * %f : float : 실수 출력
+ * %s : String : 문자열 출력
+ * %c : char : 문자 1개 출력
+ * %x : hexadecimal : 16진수 출력 
+ * %n : new
+ * line : 다음줄 개행 출력 
+ * %% : % 글자 자체 출력
  * 
  * @author Administrator
  *
