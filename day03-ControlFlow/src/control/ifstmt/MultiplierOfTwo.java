@@ -35,13 +35,18 @@ public class MultiplierOfTwo {
 		
 		// 2. 초기화
 		scan = new Scanner(System.in);
-		System.out.println("정수를 입력하시오.");
+		System.out.println("양의 정수를 입력하시오.");
 		input = scan.nextInt();
 		
 		// 3. 사용
+		// 입력값이 0인 경우 : "0은 배수 판별할 수 없습니다."
 		if(input % 2 == 0) {
-			result = "2의 배수입니다.";
-		} else {
+			 if(input == 0) {
+				result = "배수 판별할 수 없습니다.";
+			} else {
+				result = "2의 배수입니다.";
+			}
+		} else {	
 			result = "2의 배수가 아닙니다.";
 		}
 		
