@@ -59,15 +59,21 @@ public class MultiplierOfTwo {
 		mod = (input % 2);
 		
 		// 5. 사용.
-		if(mod == 0) {
-			result = "2의 배수입니다.";
-			System.out.printf("입력값은 %d 은(는) %s", input, result);
+		if (input == 0) {
+			System.out.println("0은 배수 판별할 수 없습니다.");
 		} else {
-			result = "2의 배수가 아닙니다.";
-			System.out.printf("입력값은 %d 은(는) %s%n", input, result);
-			System.out.printf("나머지가 %d 입니다", mod);
+			if(mod == 0) {
+				result = "2의 배수입니다.";
+				System.out.printf("입력값은 %d 은(는) %s", input, result);
+			} else {
+				result = "2의 배수가 아닙니다.";
+				System.out.printf("입력값은 %d 은(는) %s%n", input, result);
+				System.out.printf("나머지가 %d 입니다", mod);
+			}
 		}
-
-	}
+	
+	}	
 
 }
+
+	
