@@ -30,7 +30,17 @@ public class ArrayAndFor {
 			summary += numbers[idx];
 		}
 		// 4. 합산 출력
-		System.out.printf("배열에 저장된 원소의 합 : %d", summary);
+		System.out.printf("배열에 저장된 원소의 합 : %d%n", summary);
+		
+		// 5. 새 값 저장
+		for (int idx = 0; idx < numbers.length; idx++) {
+			numbers[idx] = (idx + 1) * 100;
+		}
+		
+		// 6 .foreach 구문으로 출력
+		for (int num : numbers) {
+			System.out.println("num=" + num);
+		}
 
 	}
 
