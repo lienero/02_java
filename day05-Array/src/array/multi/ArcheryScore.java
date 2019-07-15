@@ -18,23 +18,22 @@ public class ArcheryScore {
 			System.out.println((idx + 1) + "번째 선수 점수 입력(1~10):");
 			for (int ind = 0; ind < score[idx].length; ind ++) {
 				score[idx][ind] = scan.nextInt();
-				sum[idx] += score[idx][ind]; 
-				if( sum[idx] > max) {
-					max = sum[idx];
-					
+				sum[idx] += score[idx][ind];
+			}
+			if( sum[idx] > max) {
+				max = sum[idx];	
 				}
 			}
-		}
 		System.out.println("우승선수");
-		for (int idx = 0; idx < score.length; idx++) {
-			for (int ind = 0; ind < score[idx].length; ind ++) {
-				if (sum[idx] == max) {
-					System.out.printf("우승선수는 총합 %2d로 %d 번째 선수입니다."
-									   , max, idx+1);
+		for (int idx = 0; idx < score.length; idx++) 
+			if (sum[idx] == max) {
+				System.out.printf("맞힌 점수%n");
+				for (int scr: score[idx]) {
+				System.out.printf("%d\t", scr);
 				}
-			}
-			
-		}
+				System.out.printf("%n우승선수는 총합 %2d로 %d 번째 선수입니다."
+								  , max, idx+1);
+				}		
 
 	}
 
