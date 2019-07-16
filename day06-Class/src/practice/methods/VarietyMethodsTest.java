@@ -22,6 +22,7 @@ public class VarietyMethodsTest {
 		
 		System.out.println();
 		System.out.println("배열 구구단");
+		// 1. 매개변수로 넘길 배열 생성
 		int[] array = {2, 3, 4};
 		myvarietyMethods.printNineNineTableArray(array);
 		
@@ -49,10 +50,14 @@ public class VarietyMethodsTest {
 		System.out.printf("%d%n", sumarray);
 		
 		
+		// avgOfArray : 배열의 평균 계산 메소드 테스트
 		System.out.println();
 		System.out.println("배열의 평균");
-		int avgarray = myvarietyMethods.avgOfArray(array);
-		System.out.printf("%d%n", avgarray);
+		// 2. 테스트할 메소드 call 하며 배열을 전달.
+		double avgarray = myvarietyMethods.avgOfArray(array);
+		
+		// 3. 평균이 저장된 변수를 출력
+		System.out.printf("%3.1f%n", avgarray);
 		
 		
 		System.out.println();

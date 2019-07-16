@@ -88,7 +88,7 @@ public class VarietyMethods {
 			System.out.printf("%d단%n", stage[idx]);
 			for (int ind = 1; ind < 10; ind ++) {
 				System.out.printf("%2d x %2d = %2d%n", stage[idx], ind, stage[idx]); 
-		}
+			}
 	}
 }
 	
@@ -186,12 +186,19 @@ public class VarietyMethods {
 	 * @param numbers : int[] (int 배열)
 	 * @return int[] 배열의 각 원소의 평균 
 	 */
-	public int avgOfArray(int[] numbers) {
+	public double avgOfArray(int[] numbers) {
+		// 1. 배열 원소의 총합
+		// (1) 총합 변수 선언
 		int result = 0;
+		// (2) 평균 변수 선언
+		double avg;
+		
+		// (3) 배열의 원소의 합을 구함 ==> foreach
 		for (int idx = 0; idx < numbers.length; idx++) {
 			result += numbers[idx];
 		}
-		int avg = (result / numbers.length);
+		// 2. 총합 / 원소의 갯수 ==> 평균
+		avg = ((double)result / numbers.length);
 		return avg;
 	}
 	
