@@ -179,8 +179,8 @@ public class Book {
 	// 기능메소드
 	// 상태 출력 메소드
 	public void print() {
-		System.out.printf("일련번호 : %d, ISBN : %s, 제목 : %s, 저자 : %s, 출판사 : %s, 페이지 수 : %d, 가격 : %d%n"
-							+ ", 재고수량 : %d", sequence, isbn, title, author, company, totalPage, price, quantity);
+		System.out.printf("책정보 [일련번호 : %d, ISBN : %s, 제목 : %s, 저자 : %s, 출판사 : %s, 페이지 수 : %d, 가격 : %d%n"
+							+ ", 재고수량 : %d]%n", sequence, isbn, title, author, company, totalPage, price, quantity);
 	}
 	
 	// 재고 구매 메소드
