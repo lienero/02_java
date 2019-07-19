@@ -57,5 +57,3 @@ public class BookStroeTest {
 		// 7. 폐기 확인을 위해 전체 목록을 재 조회 : getAllBooks
 		}
 	}
-
-}
