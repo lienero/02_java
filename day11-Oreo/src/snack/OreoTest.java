@@ -40,10 +40,20 @@ public class OreoTest {
 		}
 		
 		// 초코 쿠키 (1번 쿠키)를 바닐라로 변경 : set
+		box.set(choco); {
+			choco.changeCream("바닐라");
+		}
 		
 		
 		// 변경된 초코쿠키 (1번 쿠키) :get
+		box.get(choco);
 		
+		System.out.println("===========================");
+		
+		// 변경된 초코쿠키 확인
+		for (Oreo oreo: box.getAllOreos()) {
+			oreo.print();
+		}
 		
 		// 전체 크림 변경
 		for (Oreo oreo: box.getAllOreos()) {			
@@ -54,15 +64,19 @@ public class OreoTest {
 		
 		
 		// 바닐라 크림 변경 후 출력
-		for (Oreo oreo: oreos) {
+		for (Oreo oreo: box.getAllOreos()) {
 			oreo.print();
 		}
 		
 		
 		// 3번 쿠키 삭제 : remove
+		box.remove(greentea);
 		
-		// 전체 목록 출력 
-		
+		// 전체 목록 출력
+		System.out.println("===========================");
+		for (Oreo oreo: box.getAllOreos()) {
+			oreo.print();
+		}
 		
 		
 	

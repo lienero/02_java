@@ -26,6 +26,7 @@ public class Oreo {
 	String cream;
 	double radius;
 	double thickness;
+	int	seq;
 	
 	// 2. 생성자 중복 정의
 	Oreo() {
@@ -33,25 +34,29 @@ public class Oreo {
 	}
 	
 	// TODO 생성자 seq 필드에 대해 중복정의
-	
-	Oreo(String cream) {
+	Oreo(int seq) {
 		this();
+		this.seq = seq;
+	}
+	
+	Oreo(int seq, String cream) {
+		this(seq);
 		this.cream = cream;
 	}
 	
-	Oreo(String cream, double radius) {
-		this(cream);
+	Oreo(int seq, String cream, double radius) {
+		this(seq, cream);
 		this.radius = radius;
 	}
 	
-	Oreo(String cream, double radius, double thickness) {
-		this(cream, radius);
+	Oreo(int seq, String cream, double radius, double thickness) {
+		this(seq, cream, radius);
 		this.thickness = thickness;
 	}
 	
 	// 3. 메소드 정의
 	public void print() {
-		System.out.printf("cream : %s, radius : %5.2f, thickness : %5.2f%n", cream, radius, thickness);
+		System.out.printf("seq : %d, cream : %s, radius : %5.2f, thickness : %5.2f%n", seq, cream, radius, thickness);
 	}
 	
 	public void changeCream(String cream) {
@@ -59,5 +64,38 @@ public class Oreo {
 	}
 	
 	// TODO 접근자, 수정자
-
+	// 접근자
+	public int getSeq() {
+		return seq;
+	}
+	
+	public String getCream() {
+		return cream;
+	}
+	
+	public double getRadius() {
+		return radius;
+	}
+	
+	public double getThickness() {
+		return thickness;
+	}
+	
+	// 수정자
+	public void setSeq(int seq) {
+		this.seq = seq;
+	}
+	
+	public void setCream(String cream) {
+		this.cream = cream;
+	}
+	
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	public void setThickness(double thickness) {
+		this.thickness = thickness;
+	}
+	
 }
