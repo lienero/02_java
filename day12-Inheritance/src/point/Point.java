@@ -13,7 +13,7 @@ public class Point {
 	private int y;
 	
 	// 2. 생성자
-	// 기본생성자 명시 하지 않음 ==> 기본생성자 ㅇ벗음.
+	// 기본생성자 명시 하지 않음 ==> 기본생성자 없음.
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
