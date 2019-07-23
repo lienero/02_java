@@ -55,38 +55,44 @@ public class Product {
 		
 	}
 	// (2) 매개변수를 받는 생성자
-	//  pcode 필드만 초기화하는 생성자
+	/**  pcode 필드만 초기화하는 생성자  */
 	public Product(String pcode) {
 		this();
 		this.pcode = pcode;
 		
 	}
 	
-	//  pcode, pname 필드 초기화하는 생성자
+	/**  pcode, pname 필드 초기화하는 생성자 */
 	public Product(String pcode, String pname) {
 		this(pcode);
 		this.pname = pname;
 	}
 	
-	//  pcode, pname, price 필드 초기화하는 생성자
+	/**  pcode, pname, price 필드 초기화하는 생성자 */
 	public Product(String pcode, String pname, int price) {
 		this(pcode, pname);
 		this.price = price;
 	}
 	
-	//  전체 필드 초기화하는 생성자
+	/** 전체 필드 초기화하는 생성자 */
 	public Product(String pcode, String pname, int price, int quantity) {
 		this(pcode, pname, price);
 		this.quantity = quantity;
 	}
 	
 	// 3. 메소드 선언
-	// print 메소드 (제품의 상태를 출력)
+	// print 메소드
+	/**
+	 * 제품의 상태를 출력
+	 */
 	public void print() {
 		System.out.println(this);
 	}
 	
 	// toString 메소드 (이 제품을 대표하는 문자열을 리턴)
+	/**
+	 * 이 제품을 대표하는 문자열을 리턴
+	 */
 	public String toString() {
 		return String.format("제품번호 : %s, 제품 명 : %s, 가격 : %d, 재고수량 : %d", pcode, pname, price, quantity);
 	}
